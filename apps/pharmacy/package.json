@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "checkly:test": "pnpm exec checkly test",
-    "checkly:deploy": "pnpm exec checkly deploy"
+    "checkly:deploy": "pnpm exec checkly deploy --force"
   },
   "dependencies": {
     "@turbo-demo/shared-helpers": "workspace:*"
