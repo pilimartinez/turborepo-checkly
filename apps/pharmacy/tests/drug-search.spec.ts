@@ -4,6 +4,7 @@ import { navigateTo, waitForPageReady, searchBook, verifyCatalogLoaded } from '@
 /**
  * CI test promoted to monitor via @p0 tag.
  * Composes building blocks: navigateTo, searchBook, verifyCatalogLoaded
+ * Verifies core search functionality for pharmacy app
  */
 test.describe('Book Search', { tag: ['@pharmacy', '@p0'] }, () => {
   test('should display the catalog with books', async ({ page }) => {

@@ -5,7 +5,7 @@ import { navigateTo, waitForPageReady, openBookDetail, addToCart } from '@turbo-
  * Intentionally failing test to demonstrate how Checkly surfaces
  * assertion failures in the dashboard with traces and screenshots.
  */
-test.describe('Coupon Validation', { tag: ['@pharmacy', '@p1'] }, () => {
+test.describe('Coupon Validation', { tag: ['@pharmacy', '@failing'] }, () => {
   test('should apply a discount coupon at checkout', async ({ page }) => {
     await navigateTo(page, '/')
     await waitForPageReady(page)
