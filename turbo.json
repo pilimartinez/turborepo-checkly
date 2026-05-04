@@ -1,0 +1,15 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "checkly:test": {
+      "dependsOn": [],
+      "env": ["CHECKLY_API_KEY", "CHECKLY_ACCOUNT_ID"],
+      "cache": false
+    },
+    "checkly:deploy": {
+      "dependsOn": [],
+      "env": ["CHECKLY_API_KEY", "CHECKLY_ACCOUNT_ID"],
+      "cache": false
+    }
+  }
+}

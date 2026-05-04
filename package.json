@@ -1,0 +1,12 @@
+{
+  "name": "turborepo-checkly-demo",
+  "private": true,
+  "scripts": {
+    "checkly:test": "turbo run checkly:test",
+    "checkly:deploy": "turbo run checkly:deploy"
+  },
+  "devDependencies": {
+    "turbo": "^2.4.0"
+  },
+  "packageManager": "pnpm@9.15.0"
+}
