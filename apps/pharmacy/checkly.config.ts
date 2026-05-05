@@ -7,7 +7,7 @@ import { emailAlert } from './__checks__/alertChannels'
  *
  * Demonstrates two patterns:
  * 1. Playwright Check Suites — CI tests promoted to monitors via @tags
- * 2. Standalone BrowserChecks — migrated from Datadog (in __checks__/)
+ * 2. Standalone BrowserChecks
  */
 export default defineConfig({
   projectName: 'Turborepo Pharmacy Monitoring',
@@ -21,7 +21,7 @@ export default defineConfig({
     frequency: Frequency.EVERY_10M,
     locations: ['us-east-1', 'us-west-1'],
 
-    // Auto-discover standalone check constructs (Datadog migrations)
+    // Standalone check constructs
     checkMatch: '**/__checks__/**/*.check.ts',
 
     // Playwright Check Suites — promoted CI tests grouped by criticality
